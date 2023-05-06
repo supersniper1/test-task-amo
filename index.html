@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1 task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        transition-duration: .25s;
+        font-size: 16px;
+        font-family: 'Mulish', sans-serif;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #f4f6f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      form {
+        width: 300px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      input {
+        width: 150px;
+        background-color: #f4f6f8;
+        border-bottom: 2px solid #212121;
+        padding: 5px;
+      }
+
+      button {
+        width: 150px;
+        height: 40px;
+        background-color: #212121;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 2px solid #212121;
+      }
+
+      button:hover {
+        background-color: #f4f6f8;
+        color: #212121;
+      }
+
+      span {
+        font-weight: bold;
+      }
+
+      div {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <span></span>
+      <div>
+        <input placeholder="seconds" type="number" />
+        <button id="start" type="submit">start</button>
+        <button id="stop" hidden>stop</button>
+      </div>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
